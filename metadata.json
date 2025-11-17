@@ -1,0 +1,5 @@
+{
+  "name": "AI Markdown Converter",
+  "description": "An application that uses the Gemini API to convert Markdown text into various formats like HTML, CSS, JavaScript, C#, Java, and more.",
+  "requestFramePermissions": []
+}

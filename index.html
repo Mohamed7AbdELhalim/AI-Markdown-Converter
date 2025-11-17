@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <title>محول الماركداون بالذكاء الاصطناعي</title>
+  <base href="/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Prism.js CSS (Okaidia Theme) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet" />
+  <style>
+    /* Custom styles to make Prism.js theme blend with Tailwind's dark theme */
+    :not(pre) > code[class*="language-"], 
+    pre[class*="language-"] {
+      /* Match the app's bg-gray-800 */
+      background: #2D3748 !important;
+    }
+    .token.comment, 
+    .token.prolog, 
+    .token.doctype, 
+    .token.cdata {
+       /* Match the app's gray-400 for better readability */
+      color: #9CA3AF;
+    }
+    /* Ensure the pre tag fills its container */
+    pre[class*="language-"] {
+      padding: 1rem;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "rxjs": "https://aistudiocdn.com/rxjs@^7.8.2?conditions=es2015",
+    "rxjs/operators": "https://aistudiocdn.com/rxjs@^7.8.2/operators?conditions=es2015",
+    "rxjs/ajax": "https://aistudiocdn.com/rxjs@^7.8.2/ajax?conditions=es2015",
+    "rxjs/webSocket": "https://aistudiocdn.com/rxjs@^7.8.2/webSocket?conditions=es2015",
+    "rxjs/testing": "https://aistudiocdn.com/rxjs@^7.8.2/testing?conditions=es2015",
+    "rxjs/fetch": "https://aistudiocdn.com/rxjs@^7.8.2/fetch?conditions=es2015",
+    "@angular/platform-browser": "https://next.esm.sh/@angular/platform-browser@^20.1.6-0?external=rxjs",
+    "@angular/compiler": "https://next.esm.sh/@angular/compiler@^20.1.6-0?external=rxjs",
+    "@angular/core": "https://next.esm.sh/@angular/core@^20.1.6-0?external=rxjs",
+    "@google/genai": "https://next.esm.sh/@google/genai@^1.17.0?external=rxjs",
+    "@angular/common": "https://next.esm.sh/@angular/common@^20.1.6-0?external=rxjs"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-gray-900">
+  <app-root></app-root>
+  <!-- Prism JS Core + Autoloader for automatic language detection -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+  <!-- PDF Generation Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</body>
+</html>
